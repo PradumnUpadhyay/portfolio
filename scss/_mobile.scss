@@ -42,6 +42,13 @@
             height: 150px;
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio';
+        grid-template-columns: 1fr;
+    }
 }
 @include mediaSm {
     main#home h1 {
