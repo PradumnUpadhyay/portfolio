@@ -73,34 +73,56 @@ main {
             margin-top: 20vh;
         }
     }
-}
+
+
 
 .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio';
-    grid-template-columns: repeat(3,1fr);
-
-    .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
-    }
-    
-    .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
-    }
+    grid-template-areas: 
+                        'bioimage bio bio bio bio'
+                        'skill1 skill2 skill3 skill4 skill5';
+    grid-template-columns: repeat(5,1fr);
 }
+.bio-image {
+    height: 250px;
+    width: 250px;
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+}
+    
+.bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+}
+
+    .skill-1 {
+        grid-area: skill1;
+    }
+    .skill-2 {
+        grid-area: skill2;
+    }
+    .skill-3 {
+        grid-area: skill3;
+    }
+    .skill-4 {
+        grid-area: skill4;
+    }
+    .skill-5 {
+        grid-area: skill5;
+    }
+
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 0.7rem;
+    grid-gap: 0.7rem; 
+    grid-template-columns: repeat(4,1fr);
 
     img {
         width: 100%;
+        height: 60%;
         border: 3px #fff solid;
     
     &:hover {
@@ -109,6 +131,7 @@ main {
         @include easeOut;
     }
     }
+}
 }
 
 .boxes {
@@ -159,12 +182,33 @@ main {
     color: #333;
 }
 
+// Progress Bars
+.container { margin-top: 10px; }
+
+.progress-bar-vertical {
+  width: 20px;
+  min-height: 100px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+  float: left;
+}
+
+.progress-bar-vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem; 
     background: darken($primary-color, 10);
     color: $primary-color;
     height: 60px;
+    color: #fff;
 }
 
 @import 'mobile';

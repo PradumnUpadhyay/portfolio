@@ -39,14 +39,16 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
     visibility: hidden;
+
 
     &.show {
         visibility: visible;
     }
 
-    &-branding, &-nav {
+    &-branding, 
+    &-nav {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -66,8 +68,11 @@
         @include easeOut;
 
         &.show {
+            // slide in from top
             transform: translate3d(0,0,0);
         }
+
+       
     }
 
     &-branding {
@@ -76,22 +81,28 @@
         @include easeOut;
 
         &.show {
+            //slide in from bottom
             transform: translate3d(0,0,0);
            
         }
-        .potrait {
-            width: 250px;
-            height: 250px;
-            background: url('../img/me.jpg');
-            border-radius: 50%;
-            border: solid 3px $secondary-color;
-        }
-    }   
+      
+    }  
+    
+    img {
+        width: 250px;
+        // height: 250px;
+        background: darken($primary-color,85);
+        border-radius: 50% 20% / 10% 40%;
+        border: solid 3px $secondary-color;
+        opacity: 100;
+    }
+
         .nav-item {
             transform: translate3d(600px,0,0,);
             @include easeOut;
 
             &.show {
+                //slide in from right
                 transform: translate3d(0,0,0);
             }
 
@@ -105,9 +116,8 @@
             position: relative;
             font-size: 30px;
             text-transform: uppercase;
-            padding: 15px;
             font-weight: 300;
-            padding: 1rem 0;
+            padding: 1rem 2rem;
             color: #fff;
             text-decoration: none;
             @include easeOut;
@@ -116,6 +126,8 @@
                 color: $secondary-color;
             }
         }
+
+
     }
 
 @for $x from 1 through 4 {
