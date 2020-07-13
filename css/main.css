@@ -20,6 +20,13 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.greeting {
+  padding: 1rem 2rem;
+  margin: 0rem;
+}      
+.text {
+  padding: 2px 4px;
+      }
 .menu {
   position: fixed;
   top: 0;
@@ -53,11 +60,11 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu img {
-    width: 250px;
+    width: 350px;
     background: black;
     border-radius: 50% 20% / 10% 40%;
     border: solid 3px #eece1a;
-    opacity: 100; }
+    opacity: 90; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -159,10 +166,11 @@ main {
   main .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio bio bio' 'skill1 skill2 skill3 skill4 skill5';
+    grid-template-areas: 'bioimage bio bio bio bio'
+ 'skill1 skill2 skill3 skill4 skill5';
     grid-template-columns: repeat(5, 1fr); }
   main .bio-image {
-    height: 250px;
+    height: 300px;
     width: 250px;
     grid-area: bioimage;
     margin: auto;
@@ -249,7 +257,7 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  padding: 3px; 
   background: #343434;
   color: #4d4d4d;
   height: 60px;
@@ -292,7 +300,8 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio';
+    grid-template-areas: 'bioimage'
+ 'bio';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {

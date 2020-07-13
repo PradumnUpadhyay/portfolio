@@ -85,11 +85,11 @@ main {
     grid-template-columns: repeat(5,1fr);
 }
 .bio-image {
-    height: 250px;
-    width: 250px;
+    height: 400px;
+    width: 350px;
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 70%;
     border: $secondary-color 3px solid;
 }
     

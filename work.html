@@ -18,12 +18,12 @@
         <nav class="menu">
             <div class="menu-branding">
                 <div class="potrait">
-                    <img src="/img/me.jpg" alt="">
+                    <img src="./img/me.jpg" alt="">
                 </div>
             </div>
             <ul class="menu-nav">
                 <li class="nav-item">
-                    <div id="greeting"></div>
+                    
                     <a href="index.html" class="nav-link">
                         Home
                     </a>
@@ -60,52 +60,69 @@
                <a href="https://weather-node-test.herokuapp.com/">
                  <img src="../img/weather.png" alt="Weather App">
                </a>
-               <!-- <div>Weather App</div> -->
+               <h3 class="sm-header">Weather App</h3>
                <a href="https://weather-node-test.herokuapp.com/" class="btn-light">
-                   <i class="fas fa-eye"></i>
+
+                   <i class="fas fa-eye"><span class="text">Preview</span></i>
                </a>
                <a href="https://github.com/PradumnUpadhyay/Wnode_test/" class="btn-dark">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github"><span class="text">GitHub</span></i>
                </a>
+               <p> A Weather web-app made in NodeJS, to tell weather of a specific location by making API calls to
+                    <strong>Dark-Sky</strong>  and <strong>MapBox</strong>.
+                    Technologies used: NodeJS and Geocoding
+                </p>
            </div>
            <div class="item">
                <a href="#">
                  <img src="../img/speed.png" alt="Internet Speed-tester CLI">
                </a>
+               <h3 class="sm-header">CLI Speed-tester</h3>
                <a href="#!" class="btn-light">
-                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye"><span class="text">Preview</span></i>
             </a>
                <a href="https://github.com/PradumnUpadhyay/SpeedTest" class="btn-dark">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github"> <span class="text">GitHub</span></i>
                </a>
+               <p> Terminal based Command Line tool to check your internet speed from your terminal. It makes an API call to speedtest.net server to get info about nearest server and calculates the speed.
+                   Technologies used: NodeJS; speedtest-cli, chalk and progress library
+               </p>
            </div>
            <div class="item">
                <a href="http://stackhack-todo-app.herokuapp.com/">
                  <img src="../img/todo.jpg" alt="Task Manager app">
                </a>
+               <h3 class="sm-header">Task Manager App</h3>
                <a href="http://stackhack-todo-app.herokuapp.com/" class="btn-light">
-                   <i class="fas fa-eye"></i>
+                   <i class="fas fa-eye"> <span class="text">Preview</span></i>
                </a>
                <a href="https://github.com/PradumnUpadhyay/task-manager-API" class="btn-dark">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github"> <span class="text">GitHub</span> </i>
                </a>
+               <p>A Todo-app for Stack-hack hackathon on HackerEarth.</p>
            </div>
            <div class="item">
                <a href="#!">
                  <img src="../img/torrent.png" alt="TorrGRab">
                </a>
+               <h3 class="sm-header">TorrGrab</h3>
                <a href="#!" class="btn-light">
-                   <i class="fas fa-eye"></i>
+                   <i class="fas fa-eye"> <span class="text">Preview</span> </i>
                </a>
                <a href="https://github.com/PradumnUpadhyay/TorrGrab" class="btn-dark">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github"> <span class="text">GitHub</span></i>
                </a>
+               <p>Created my own torrent client CLI based in Python3. Simply execute the file in terminal and search for what 
+                   you want to download, based on that query a list of results will be displayed inside terminal 
+                   from different torrent sites, to download just specify the serial number and you are done. 
+                   Technologies used are: Python3, urllib, BeautifulSoup bs4 module, requests and os library
+                </p>
            </div>
           </div>
   </main>
 
   <footer id="main-footer">
-    
+    <div id="greeting"></div>
   </footer>
     <script src="js/main.js"></script>
 </body>
